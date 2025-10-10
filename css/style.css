@@ -1,0 +1,721 @@
+/*Fontes*/
+@font-face {
+    font-family: Canva Sans;
+    src: url('../fonts/Canva-Sans-Regular/canva-sans-regular.otf');
+}
+@font-face {
+    font-family: Brownn Sugar;
+    src: url('../fonts/Brown-Sugar-Font-Family/brown-sugar.ttf');
+}
+@font-face {
+    font-family: Agrandir;
+    src: url('../fonts/Agrandir-Font-Family/Agrandir-TextBold.otf');
+}
+@font-face {
+    font-family: Avant Garde Gothic;
+    src: url('../fonts/ITCAvantGardeStd-Bk.ttf');
+}
+@font-face {
+    font-family: Avant Garde Gothic Cond;
+    src: url('../fonts/ITCAvantGardeGothicBoldCondensed.otf');
+}
+/*Todos os elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Definindo a altura do doc*/
+html, body {
+    height: -webkit-fill-available;
+}
+/*Home*/
+.home, .aboutUs, .importancy, .participate, .services, .about_partners, .partners, .data1, .developers {
+    background-image: url('../imgs/home_bg.png');
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 60px 0;
+}
+/*Cabeçalho*/
+.home header {
+    padding-bottom: 50px;
+}
+/*Menu*/
+.navBarMobile_cont {
+    display: none;
+}
+.nav_bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_bar ul li {
+    display: inline-block;
+    text-align: center;
+}
+.nav_bar ul li a, .logo a, .label p {
+    color: #b1d4e0;
+    font-family: Agrandir;
+    font-style: italic;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+.nav_bar ul li a, .logo a {
+    transition: 0.7s;   
+}
+.nav_bar ul li a:hover, .logo a:hover {
+    transform: scale(1.05);
+}
+.nav_bar ul li span, .link_cont span, .label_text span {
+    display: flex;
+    justify-self: center;
+    height: 3px;
+    width: 200px;
+    background-color: #b1d4e0;
+    border-radius: 10px;
+}
+.nav_bar ul li:nth-of-type(3) span {
+    width: 240px;
+}
+.nav_bar ul li:nth-of-type(1) span {
+    width: 120px;
+}
+.nav_bar ul li:nth-of-type(2) span {
+    width: 180px;
+}
+/*Principal*/
+.main {
+    display: flex;
+    height: 90.3%;
+}
+/*Etiqueta*/
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+}
+.label img {
+    margin-top: 10px;
+    width: 20%;
+}
+.label p {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+/*Container da logo*/
+.logo {
+    width: 70%;
+}
+/*Envoltorio logo*/
+.logo_wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+}
+.logo_wrap > img {
+    width: 15%;
+}
+/*Envoltorio do texto*/
+.text_wrap {
+    padding-left: 30px;
+}
+.text_wrap img {
+    width: 70%; 
+}
+.text_wrap p {
+    font-size: 22px;
+    margin: -32px 10px 0 40px;
+    font-family: Canva Sans;
+    color: #fafafa;
+}
+/*Container do link*/
+.link_cont {
+    margin-left: 10%;
+    margin-top: 16%;
+    text-align: center;
+}
+/*Sobre Nós*/
+.aboutUs {
+    background-image: url('../imgs/sobreNos_bg.png');
+    padding: 80px 0 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/*Conteudo da seção sobre nos*/
+.aboutUs .content {
+    margin-left: 60px;
+}
+.aboutUs .content h1, .importancy h1, .participate h1, .services h1, .about_partners h1, .partners h1, .data1 h1, .developers h1 {
+    font-family: Brownn Sugar;
+    font-size: 70px;
+    color: #7ed957;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.aboutUs .content p, .importancy p, .participate p, .services p, .about_partners p, .partners p, .data1 p {
+    font-family: Avant Garde Gothic;
+    color: #b1d4e0;
+    line-height: 30px;  
+    font-size: 22px;
+}
+/*Seção sobre a importancia do projeto*/
+.importancy {
+    background-image: url('../imgs/importancia_bg.png');
+    padding: 70px 0;
+}
+.importancy h1 {
+    font-size: 65px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+/*Container que guarda o texto e a imagem*/
+.importancy div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.importancy p {
+    text-align: center;
+    margin-right: 160px;
+}
+.importancy img {
+    width: 23%;
+}
+/*Seção de quem pode participar*/
+.participate {
+    background-image: url('../imgs/importancia_bg.png');
+    padding: 80px 0;
+}
+.participate h1 {
+    font-size: 81px;
+    line-height: 70px;
+}
+.participate img {
+    align-self: end;
+}
+/*Container do conteudo da seção de participar*/
+.participate .content, .about_partners .content, .data1 div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*Seção sobre os serviços*/
+.services {
+    background-image: url('../imgs/servicos_bg.png');
+    padding: 70px 0 40px;
+}
+.services h1 {
+    margin-bottom: 80px;
+    font-size: 88px;
+    text-align: center;
+}
+/*Container do conteudo*/
+.services .content, .partners .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*elementos dentro do container conteudo*/
+.services p {
+    text-align: center;
+    font-size: 21px;
+}
+.services h2 {
+    color: #b1d4e0;
+    margin: 7px 0;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Brownn Sugar;
+    font-size: 24px;
+}
+.services img, .partners img {
+    width: 27%;
+    display: flex;
+    justify-self: center;
+}
+/*Seção falando sobre parceiros*/
+.about_partners {
+    background-image: url('../imgs/aboutPartners_bg.png');
+    padding: 70px 0 80px;
+}
+/*Conteúdo dentro da seção*/
+.about_partners h1 {
+    font-size: 71px;
+    line-height: 56px;
+    margin-bottom: 40px;
+}
+.about_partners img {
+    width: 30%;
+    align-self: end;
+}
+/*Seção descrevendo os parceiros*/
+.partners {
+    background-image: url('../imgs/partners_bg.png');
+}
+/*conteúdo da seção*/
+.partners .content div, .services .content div {
+    align-self: end;
+}
+.partners h1 {
+    text-align: center;
+    font-size: 91px;
+}
+.partners img {
+    width: 45%;
+}
+.partners p, .developers p {
+    margin-top: 40px;
+    font-family: Avant Garde Gothic Cond;
+    font-size: 20px;
+    color: #07335d;
+    text-align: center;
+}
+/*Seção dos dados 1*/
+.data1 {
+    background-image: url('../imgs/data1_bg.png');
+    padding: 60px 0 150px;
+}
+/*container do conteudo*/
+.data1 div {
+    justify-content: space-evenly;
+}
+/*Conteudo da seção*/
+.data1 img {
+    width: 30%;
+}
+.data1 h1 {
+    margin-bottom: 60px;
+    font-size: 80px;
+    line-height: 68px;
+    text-align: center;
+}
+/*Seção dos desenvolvedores do projeto*/
+.developers {
+    background-image: url('../imgs/developers_bg.png');
+}
+/*Conteúdo da seção*/
+.developers h1 {
+    padding-left: 40px;
+    margin-bottom: 100px;
+}
+/*Container pai*/
+.developers .content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.developers .wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.developers .wrap:nth-of-type(2) {
+    margin-top: 50px;
+}
+/*Container da imagem*/
+.developers .wrap div {
+    width: 25%;
+}
+/*Imagem dos estudantes*/
+.developers img {
+    width: 100%;
+    border-radius: 8px;
+}
+/*Nome dos estudantes*/
+.developers p {
+    margin-top: 10px;
+}
+/*Responsivo: mobile*/
+@media screen and (max-width: 600px) {
+    /*Menu desktop*/
+    .nav_bar {
+        display: none;
+    }
+    /*Menu mobile*/
+    .navBarMobile_cont {
+        display: flex;
+        flex-direction: column; 
+    }
+    .navBarMobile_cont > i {
+        font-size: 30px;
+        align-self: end;
+        background-color: #fafafa;
+        padding: 5px 7px;
+        border-radius: 5px;
+        margin-right: 20px;
+    }
+    .navBar_mobile {
+        padding-right: 20px;
+        position: relative;
+    }
+    .navBar_mobile ul {
+        position: absolute;
+        top: -44px;
+        list-style-type: none;
+        display: none;
+        width: 50%;
+        background-color: #07335d;
+        border-radius: 10px;
+        justify-self: end;
+    }
+    .navBar_mobile ul li {
+        display: inline-block;
+        width: 100%;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .navBar_mobile ul li:nth-of-type(5) {
+        margin-bottom: 15px;
+    }
+    .navBar_mobile ul i {
+        font-size: 30px;
+        color: #fafafa;
+    }
+    .navBar_mobile ul a {
+        color: #07335d;
+        font-family: Agrandir;
+        font-style: italic;
+        background-color: #fafafa;
+        width: 80%;
+        padding: 8px 0 5px;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+    }
+    /*seção home*/
+    .home {
+        padding: 20px 0;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .logo {
+        width: 100%;
+    }
+    .label {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .label p {
+        font-size: 14px;
+    }
+    .label span {
+        width: 100%;
+    }
+    .label img {
+        width: 33%;
+    }
+    .logo_wrap {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .logo_wrap > img {
+        width: 25%;
+    }
+    .text_wrap {
+        padding: 0 15px;    
+    }
+    .text_wrap img {
+        width: 100%;
+    }
+    .text_wrap p {
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+    }
+    .link_cont {
+        margin: 0;
+        padding-top: 20px;
+    }
+    .link_cont a {
+        font-size: 14px;
+    }
+    .link_cont span {
+        width: 31%;
+    }
+    /*Seção sobre nós*/
+    .aboutUs {
+        flex-direction: column-reverse;
+        padding: 30px 0;
+    }
+    .aboutUs .content {
+        margin: 0;
+        display: flex;
+        padding: 0 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .aboutUs .img {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .aboutUs img {
+        width: 70%;
+    }
+    .aboutUs .content h1, .importancy h1, .participate h1, .services h1, .about_partners h1, .partners h1, .data1 h1, .developers h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .aboutUs .content h1, .importancy h1 {
+        line-height: 30px;  
+    }
+    .aboutUs .content p, .importancy p, .participate p, .services .content p, .about_partners p, .partners p, .data1 p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 15px;
+    }
+    .aboutUs .content p br, .importancy p br,  .participate p br, .participate h1 br, .services .content p br, .about_partners p br, .about_partners h1 br, .partners p br, .data1 h1 br {
+        display: none;
+    }
+    /*Seção que fala da importância*/
+    .importancy, .participate, .services, .about_partners, .partners {
+        padding: 30px 15px;
+    }
+    .importancy div, .about_partners .content, .partners .content, .data1 div {
+        flex-direction: column;
+    }
+    .importancy img {
+        width: 70%;
+        height: auto;
+        margin-top: 30px;
+    }
+    .importancy p {
+        margin-right: 0;
+    }
+    /*Seção sobre a participação*/
+    .participate .content {
+        flex-direction: column;
+    }
+    .participate h1, .about_partners h1 {
+        text-align: center;
+        margin: 0;
+    }
+    .participate img, .about_partners img, .data1 img {
+        width: 70%;
+        align-self: auto;
+        margin-top: 30px;
+    }
+    /*Seção sobre serviços*/
+    .services .content {
+        flex-direction: column;
+    }
+    .services .content div {
+        align-self: center;
+    }
+    .services .content div:nth-of-type(2), .partners .content div:nth-of-type(2) {
+        margin: 30px 0;
+    }
+    .services .content h2 {
+        font-size: 20px;
+    }
+    .services .content img, .partners img {
+        width: 25%;
+    }
+    /*Seção descrevendo os parceiros*/
+    .partners p {
+        margin-top: 10px;
+    }
+    /*Seção sobre os graficos*/
+    .data1 {
+        padding: 30px 0;
+    }
+    .data1 h1 {
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .data1 img {
+        width: 90%;
+    }
+    .data1 p {
+        text-align: left;
+    }
+    /*Seção mostrando fotos dos desenvolvedores do projeto*/
+    .developers {
+        padding: 30px 0;
+    }
+    .developers h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+    .developers .wrap {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .developers .wrap:nth-of-type(2) {
+        margin-top: 0;
+    }
+    .developers .wrap div {
+        width: 100%;
+    }
+    .developers img {
+        width: 90%;
+        display: flex;
+        justify-self: center;
+    }
+    .developers p {
+        margin: 10px 0;
+    }
+}
+/*Responsivo: tablet*/
+@media  screen and (min-width: 601px) and (max-width: 820px) {
+    /*Menu*/
+    .nav_bar ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .nav_bar ul li a, .label p, .logo a {
+        font-size: 15px;
+    }
+    .nav_bar ul li span, .nav_bar ul li:nth-of-type(1) span, .nav_bar ul li:nth-of-type(3) span, .nav_bar ul li:nth-of-type(2) span, .label span {
+        width: 100%;
+    }
+    /*Seção home*/
+    .main {
+        height: auto;
+    }
+    /*Etiqueta*/
+    .label img {
+        width: 60%;
+    }
+    /*logo*/
+    .logo span {
+        width: 25%;
+    }
+    .logo_wrap > img {
+        width: 17%;
+    }
+    .text_wrap img {
+        width: 95%;
+    }
+    .text_wrap p {
+        margin: 0;
+        font-size: 14px;
+    }
+    /*Seção sobre nós*/
+    .aboutUs {
+        padding: 60px 20px;
+    }
+    .aboutUs .content {
+        width: 60%;
+        margin-left: 0;
+        padding: 0 17px;
+    }
+    .aboutUs .content h1, .importancy h1, .participate h1, .services h1, .about_partners h1, .partners h1, .data1 h1, .developers h1 {
+        font-size: 30px;
+    }
+    .aboutUs .img {
+        width: 40%;
+    }
+    .aboutUs .content p, .importancy p, .participate p, .services p, .about_partners p, .partners p, .data1 p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .aboutUs .content p > br, .importancy p > br, .participate p > br, .services p > br, .about_partners p > br, .partners p > br  {
+        display: none;
+    }
+    .aboutUs img {
+        width: 100%;
+    }
+    /*Seção sobre a importancia*/
+    .importancy {
+        padding: 70px 15px;
+    }
+    .importancy p {
+        margin-right: 0;
+    }
+    .importancy img {
+        height: auto;
+        width: 40%;
+        padding-left: 15px;
+    }
+    /*Seção sobre quem pode participar*/
+    .participate {
+        padding: 80px 20px;
+    }
+    .participate h1, .about_partners h1, .data1 h1 {
+        line-height: 30px;
+    }
+    .participate img {
+        width: 40%;
+        margin-left: 20px;
+        align-self: center;
+    }
+    /*Seção sobre os serviços*/
+    .services {
+        padding: 70px 20px;
+    }
+    .services .content, .partners .content {
+        flex-wrap: wrap;
+    }
+    .services .content div:nth-of-type(2), .services .content div:nth-of-type(3) {
+        margin-top: 15px;
+    }
+    .services h2 {
+        font-size: 20px;
+    }
+    .services img, .partners img {
+        width: 13%;
+    }
+    /*Seção sobre os parceiros*/
+    .about_partners {
+        padding: 70px 20px;
+    }
+    .about_partners img {
+        width: 50%;
+        align-self: center;
+        margin-left: 15px;
+    }
+    /*Seção descrevendo os parceiros*/
+    .partners {
+        padding: 70px 20px    
+    }
+    .partners .content div:nth-of-type(2), .partners .content div:nth-of-type(3) {
+        margin-top: 15px;
+    }
+    .partners p {
+        margin-top: 30px;
+    }
+    /*Seção mostrando os dados*/
+    .data1 {
+        padding: 60px 0;
+    }
+    .data1 div {
+        flex-wrap: wrap;
+    }
+    .data1 img {
+        width: 70%;
+        margin-top: 20px;
+    }
+    /*Seção sobre os desenvolvedores do projeto*/
+    .developers img {
+        width: 40%;
+    }
+}
+/*Responsivo tablets maiores e desktop pequeno*/
+@media screen and (min-width: 1280px) {
+    /*Seção sobre a participação*/
+    .participate img {
+        width: 25%;
+    }
+    /*Seção sobre os parceiros*/
+    .about_partners img {
+        width: 37%;
+    }
+    /*Seção descrevendo os parceiros*/
+    .partners img {
+        width: 35%;
+    }
+    /*Seção falando sobre os dados*/
+    .data1 img {
+        width: 40%;
+    }
+}
