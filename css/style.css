@@ -696,8 +696,27 @@ html, body {
         margin-top: 20px;
     }
     /*Seção sobre os desenvolvedores do projeto*/
+    .developers .wrap {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .developers .wrap:nth-of-type(2) {
+        margin-top: 0;
+    }
+    .developers .wrap div {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .developers .wrap:nth-of-type(1) div:nth-of-type(1) {
+        margin-top: 0;
+    }
     .developers img {
-        width: 40%;
+        width: 75%;
+        display: flex;
+        justify-self: center;
+    }
+    .developers p {
+        margin: 10px 0;
     }
 }
 /*Responsivo tablets maiores e desktop pequeno*/
