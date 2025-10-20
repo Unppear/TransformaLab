@@ -28,6 +28,7 @@
 /*Definindo a altura do doc*/
 html, body {
     height: -webkit-fill-available;
+    overflow-x: hidden;
 }
 /*Home*/
 .home, .aboutUs, .importancy, .participate, .services, .about_partners, .partners, .data1, .developers {
@@ -311,13 +312,19 @@ html, body {
     padding-left: 20px;
     width: 100%;
 }
+/*Envelope pai*/
+.wrapPai {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
 /*Container envelope das informações dos desenvolvedores*/
 .developers .wrap {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 35%;
+    width: 40%;
 }
 /*Container da imagem*/
 .developers .wrap div {
@@ -331,7 +338,7 @@ html, body {
 }
 /*Imagem dos estudantes*/
 .developers img {
-    width: 25%;
+    width: 40%;
 }
 /*Nome dos estudantes*/
 .developers p {
@@ -589,6 +596,10 @@ html, body {
         padding-left: 0;
         flex-direction: column;
     }
+    .wrapPai {
+        display: block;
+        width: 100%;
+    }
     .developers .wrap {
         width: 100%;
     }
@@ -757,32 +768,69 @@ html, body {
         width: 70%;
         margin-top: 20px;
     }
-    /*Seção sobre os desenvolvedores do projeto*/
-    .developers .wrap {
-        justify-content: center;
+    /*<--Seção Desenvolvedores-->*/
+    .developers {
+        padding: 20px 0;
+    }
+    .developers h1 {
+        padding-left: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    /*Container pai*/
+    .developers .content {
+        padding-left: 0;
         flex-direction: column;
     }
-    .developers .wrap:nth-of-type(2) {
-        margin-top: 0;
-    }
-    .developers .wrap div {
+    .wrapPai {
         width: 100%;
+        display: block; 
+    }
+    .developers .wrap {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .developers .wrap:nth-of-type(2) {
         margin-top: 20px;
     }
-    .developers .wrap:nth-of-type(1) div:nth-of-type(1) {
+    .developers .wrap div {
+        width: 30%;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 0;
     }
     .developers img {
-        width: 75%;
-        display: flex;
-        justify-self: center;
+        width: 100%;
     }
     .developers p {
         margin: 10px 0;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+    }
+    /*Container contatos*/
+    .contact {
+        width: 100%;
+        padding-left: 15px;
+    }
+    /*Título do container contatos*/
+    .contact > h2 {
+        margin: 20px 0;
+        font-size: 32px;
+    }
+    /*Links da container contatos*/
+    .contact a {
+        margin: 0 0 0 12px;
+        font-size: 15px;
+    }
+    /*Ícones do container contato*/
+    .contact i {
+        font-size: 30px;
     }
 }
 /*Responsivo tablets maiores e desktop pequeno*/
-@media screen and (min-width: 1280px) {
+@media screen and (width: 1280px) {
     /*Seção sobre a participação*/
     .participate img {
         width: 25%;
@@ -798,5 +846,19 @@ html, body {
     /*Seção falando sobre os dados*/
     .data1 img {
         width: 40%;
+    }
+    /*Seção Desenvolvedores*/
+    .wrapPai {
+        width: 60%;
+    }
+    .developers .wrap {
+            width: 50%;
+    }
+    .contact {
+        width: 40%;
+        padding-left: 20px;
+    }
+    .developers img {
+            width: 50%;
     }
 }
