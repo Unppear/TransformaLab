@@ -321,7 +321,7 @@ div.btn_close:hover i {
     width: 100%;
     justify-content: space-evenly;
 }
-/*<---Paragrafos, links e titulos do popup>*/
+/*<---Paragrafos, links e titulos do popup--->*/
 .cftec_content > p, .senai_content > p, .senac_content > p {
     text-align: center;
 }
@@ -680,6 +680,48 @@ div.btn_close:hover i {
     /*Seção descrevendo os parceiros*/
     .partners p {
         margin-top: 10px;
+    }
+    /*<---Container do popup--->*/
+    .cftec_popup, .senai_popup, .senac_popup {
+        width: 90%;
+        padding: 10px 0; 
+    }
+    /*<---Botão de fechar--->*/
+    .btn_close {
+        top: -1.5%;
+        right: -3.5%;
+    }
+    /*<---Imagem do popup--->*/
+    .cftec_popup img, .senai_popup img, .senac_popup img {
+        margin-bottom: 10px;
+        width: 20%;
+    }
+    /*<---Contaner do conteudo do popup--->*/
+    .cftec_content, .senai_content, .senac_content {
+        flex-direction: column;
+    }
+    /*<---Paragrafos, links e titulos do popup--->*/
+    .cftec_popup p, .senai_popup p, .senac_popup p, .cftec_popup h2, .senai_popup h2, .senac_popup h2, .cftec_popup a, .senai_popup a, .senac_popup a {
+        font-size: 15px;
+    }
+    /*<---Containers de contato, endereço e horario--->*/
+    .contactAddress_cont, .cftec_content > div:nth-of-type(2), .senai_content > div:nth-of-type(2), .senac_content > div:nth-of-type(2) {
+        padding-left: 20px;
+    } 
+    /*<---Container da informação de contato no popup--->*/
+    .contactAddress_cont > div {
+            margin-bottom: 10px;
+    }
+    /*<---Titulos do popup--->*/
+    .cftec_popup h2, .senai_popup h2, .senac_popup h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /*<---Icones do popup--->*/
+    .cftec_popup i, .senai_popup i, .senac_popup i {
+        font-size: 20px;
+        vertical-align: sub;
+        margin-right: 5px;
     }
     /*Seção sobre os graficos*/
     .data1 {
